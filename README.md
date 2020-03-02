@@ -91,6 +91,15 @@ Hello 3
 Hello 0
 ```
 
+## v4
+
+Unfortunately, it is not possible to use v4 from a subdirectory as the root `go.mod` contains v3.
+
+```
+$ curl https://proxy.golang.org/github.com/lspgn/gomod-versions/v4/@v/list
+not found: github.com/lspgn/gomod-versions/v4@v4.0.0: invalid version: go.mod has non-.../v4 module path "github.com/lspgn/gomod-versions/v3" (and .../v4/go.mod does not exist) at revision v4.0.0
+```
+
 # Effects on proxy
 
 The following command: `curl --silent https://github.com/lspgn/gomod-versions | grep go-import`
