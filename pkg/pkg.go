@@ -1,5 +1,5 @@
 package pkg
 
 func MyVersion() int {
-	return 2
+	return 3
 }

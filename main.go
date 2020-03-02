@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/lspgn/gomod-versions/pkg"
+	"github.com/lspgn/gomod-versions/v3/pkg"
 )
 
 func main() {
